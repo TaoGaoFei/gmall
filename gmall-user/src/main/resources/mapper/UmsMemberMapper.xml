@@ -6,7 +6,7 @@
 <mapper namespace="com.mbp.gmall.user.mapper.UmsMemberMapper">
 
     <select id="selectAllMember" resultType="com.mbp.gmall.user.bean.UmsMember">
-    select  * from  ums_member
+    select *  from  ums_member
     </select>
 
 </mapper>

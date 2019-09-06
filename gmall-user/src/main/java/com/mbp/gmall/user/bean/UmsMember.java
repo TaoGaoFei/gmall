@@ -3,6 +3,7 @@ package com.mbp.gmall.user.bean;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.math.BigInteger;
 import java.util.Date;
 
 public class UmsMember {
@@ -11,7 +12,7 @@ public class UmsMember {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
-    private String membeLevelId;
+    private String memberLevelId;
     private String username;
     private String password;
     private String nickname;
@@ -39,12 +40,12 @@ public class UmsMember {
         this.id = id;
     }
 
-    public String getMembeLevelId() {
-        return membeLevelId;
+    public String getMemberLevelId() {
+        return memberLevelId;
     }
 
-    public void setMembeLevelId(String membeLevelId) {
-        this.membeLevelId = membeLevelId;
+    public void setMemberLevelId(String memberLevelId) {
+        this.memberLevelId = memberLevelId;
     }
 
     public String getUsername() {
